@@ -1,0 +1,1 @@
+console.log("SECTION 12: SELECTION SORT");
