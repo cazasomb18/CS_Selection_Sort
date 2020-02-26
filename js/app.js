@@ -26,7 +26,7 @@ const selectionSort = (arr) => {
 		let smallest = i;
 		for ( let j = i + 1; j < arr.length; j++ ) {
 
-			if ( arr[j] < arr[smallest] ) {
+			if ( arr[smallest] > arr[j] ) {
 					smallest = j;
 			}
 		}
@@ -76,10 +76,10 @@ function selectionSortES2015(arr) {
 	return arr;
 }
 
-//THE STEPS ARE THE SAME:
-	// 1. LOOP OVER EACH ITEM
-	// 2. SET LOWEST TO BE I
-	// 3. CHECK TO SEE IF J IS < LOWEST
-	// 4. IF SO SWAP AND REPEAT UNTIL ARR IS SORTED
+// THE STEPS ARE THE SAME:
+// 		1. LOOP OVER EACH ITEM
+// 		2. SET LOWEST TO BE I
+// 		3. CHECK TO SEE IF J IS < LOWEST
+// 		4. IF SO SWAP AND REPEAT UNTIL ARR IS SORTED
 
 console.log(selectionSortES2015([0,2,34,22,10,19,17]));
